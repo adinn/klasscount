@@ -17,7 +17,8 @@ $ jps -l
 ```
 Install the agent into the JVM
 ```
-$ java -cp $PWD/target/klasscount-1.0-SNAPSHOT.jar:$JAVA_HOME/lib/tools.jar org.jboss.klasscount.AgentInstall pid target/klasscount-1.0-SNAPSHOT.jar
+$ java -cp $PWD/target/klasscount-1.0-SNAPSHOT.jar:$JAVA_HOME/lib/tools.jar \
+    org.jboss.klasscount.AgentInstall pid target/klasscount-1.0-SNAPSHOT.jar
 ```
 where pid is the process id of the JVM listed by jps that you are interested in (e.g. 28317)
 
